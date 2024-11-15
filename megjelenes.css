@@ -1,0 +1,51 @@
+#fotartalom{
+    grid-area: fo;
+    border: double 2px black;
+    border-top-width: 0px;
+}
+#baltartalom{
+    grid-area: le;
+
+}
+#jobbtartalom{
+    grid-area: ri;
+}
+#bejelentkezes{
+    grid-area: log;
+}
+nav{
+    grid-area: me;
+}
+footer{
+    grid-area: os;
+}
+#keszitette{
+    grid-area: ke;
+    border-top: dashed black 1px;
+}
+
+#elerhetoseg{
+    grid-area: el;
+    border: 1px black solid;
+}
+main{
+    display: grid;
+    grid-template-areas:
+    'me me fo log log'
+    'me me fo le ri'
+    'ke os el el el';
+}
+
+#bejelentkezes, #fotartalom{
+    text-align: center;
+}
+#jobbtartalom, footer{
+    text-align: right;
+}
+
+main>*{
+    padding-left: 10px;
+    padding-right: 10px;
+    /*either use*/
+    padding: auto 10px;
+}
